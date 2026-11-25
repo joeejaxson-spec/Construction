@@ -1,0 +1,16 @@
+{
+  "name": "construction-website",
+  "version": "1.0.0",
+  "description": "Full-stack construction company website: public site, quote requests, portfolio and admin panel. Zero dependencies (Node 22 + built-in SQLite).",
+  "main": "server.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning server.js",
+    "dev": "node --no-warnings=ExperimentalWarning --watch server.js",
+    "test": "node --no-warnings=ExperimentalWarning --test test/*.test.js"
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}} · {{site.name}}</title>
+  <meta name="description" content="{{page.summary}}">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="projects">
+<!-- @header -->
+<main id="main">
+  <section class="page-hero page-hero--project">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <a class="link-back" href="/projects">← All projects</a>
+      <p class="eyebrow" data-p="category"></p>
+      <h1 class="page-hero__title" data-p="title">{{page.title}}</h1>
+      <p class="page-hero__lead" data-p="summary">{{page.summary}}</p>
+    </div>
+  </section>
+  <div class="hazard hazard--thin" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="container project-detail">
+      <div>
+        <div class="project-detail__media" data-p="media"></div>
+        <div class="prose" data-p="description"></div>
+      </div>
+      <aside class="spec-card" aria-label="Project details">
+        <h2 class="spec-card__title">Project specs</h2>
+        <dl class="spec-list" data-p="specs"></dl>
+        <a class="btn btn--accent btn--block" href="/quote#quote">Start a similar project</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--concrete" data-related-wrap hidden>
+    <div class="container">
+      <h2 class="section-title">Related projects</h2>
+      <div class="project-grid" data-related></div>
+    </div>
+  </section>
+</main>
+<!-- @footer -->
+<script src="/js/project.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · {{site.name}}</title>
+  <meta name="description" content="About {{site.name}}: a general contractor building homes and businesses since {{site.founded}}.">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="about">
+<!-- @header -->
+<main id="main">
+  <section class="page-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow">About us</p>
+      <h1 class="page-hero__title">Builders first. Since {{site.founded}}.</h1>
+      <p class="page-hero__lead">We started with one truck and a promise to do the job the way we’d want it done on our own homes. That hasn’t changed.</p>
+    </div>
+  </section>
+  <div class="hazard hazard--thin" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="container split">
+      <div class="prose">
+        <h2 class="section-title">Our story</h2>
+        <p>{{site.name}} was founded in {{site.founded}} by tradespeople who were tired of seeing projects run over budget because nobody owned the whole job. So we built a company where one project manager is responsible for your build from the first estimate to the final walkthrough.</p>
+        <p>Today our crews handle custom homes, commercial buildings and renovations of every size. We still answer our own phones, still visit every site in person, and still clean up at the end of every day.</p>
+      </div>
+      <div class="stat-panel">
+        <div class="stat"><strong data-stat="years">–</strong><span>Years in business</span></div>
+        <div class="stat"><strong data-stat="completed">–</strong><span>Projects delivered</span></div>
+        <div class="stat"><strong data-stat="active">–</strong><span>Sites active now</span></div>
+        <div class="stat"><strong>1</strong><span>Point of contact per project</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <p class="eyebrow">What we stand for</p>
+      <h2 class="section-title">Our values</h2>
+      <div class="card-grid card-grid--4">
+        <article class="value-card"><h3>Safety</h3><p>Everyone goes home in one piece. Daily site checks, proper PPE and no shortcuts.</p></article>
+        <article class="value-card"><h3>Honesty</h3><p>Itemized pricing, early warnings about problems, and no surprise invoices.</p></article>
+        <article class="value-card"><h3>Craft</h3><p>Plumb, level and square. We take pride in work you’ll never see behind the walls.</p></article>
+        <article class="value-card"><h3>Respect</h3><p>For your home, your neighbours and your time. Tidy sites and on-time crews.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Credentials</p>
+        <h2 class="section-title">Licensed, insured, accountable</h2>
+        <p class="lead">Every project is permitted and inspected. Ask us for proof of insurance and licensing at any time, and we’ll send it the same day.</p>
+      </div>
+      <ul class="checklist">
+        <li><strong>{{site.license}}</strong></li>
+        <li><strong>General liability &amp; workers’ compensation</strong> on every job site.</li>
+        <li><strong>Written workmanship warranty</strong> on completed work.</li>
+        <li><strong>Permits handled for you</strong>, from application to final inspection.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<!-- @footer -->
+<script src="/js/home.js"></script>
+</body>
+</html>

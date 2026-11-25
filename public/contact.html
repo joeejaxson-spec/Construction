@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Free Estimate · {{site.name}}</title>
+  <meta name="description" content="Request a free construction estimate or send a message to {{site.name}}.">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="contact">
+<!-- @header -->
+<main id="main">
+  <section class="page-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1 class="page-hero__title">Let’s talk about your project</h1>
+      <p class="page-hero__lead">Tell us what you’re planning. We reply to every request within one business day.</p>
+    </div>
+  </section>
+  <div class="hazard hazard--thin" aria-hidden="true"></div>
+
+  <section class="section" id="quote">
+    <div class="container contact-layout">
+      <div class="form-card">
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-quote" id="tab-quote" type="button">Request an estimate</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-message" id="tab-message" type="button" tabindex="-1">General message</button>
+        </div>
+
+        <div id="panel-quote" role="tabpanel" aria-labelledby="tab-quote">
+          <form class="form" data-form="quote" novalidate>
+            <div class="form-row">
+              <label class="field"><span>Full name *</span><input name="name" required maxlength="120" autocomplete="name"></label>
+              <label class="field"><span>Email *</span><input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span>Phone</span><input name="phone" type="tel" maxlength="40" autocomplete="tel"></label>
+              <label class="field"><span>Project type *</span><select name="project_type" required data-options="projectTypes"><option value="">Choose one…</option></select></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span>Budget</span><select name="budget" data-options="budgets"><option value="">Choose one…</option></select></label>
+              <label class="field"><span>Timeline</span><select name="timeline" data-options="timelines"><option value="">Choose one…</option></select></label>
+            </div>
+            <label class="field"><span>Project address</span><input name="address" maxlength="200" autocomplete="street-address"></label>
+            <label class="field"><span>Tell us about the project *</span><textarea name="message" rows="6" required minlength="10" maxlength="4000" placeholder="Size, scope, any drawings you have, and anything else we should know."></textarea></label>
+            <label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+            <div class="form-status" role="status" aria-live="polite"></div>
+            <button class="btn btn--accent btn--lg" type="submit">Send estimate request</button>
+          </form>
+        </div>
+
+        <div id="panel-message" role="tabpanel" aria-labelledby="tab-message" hidden>
+          <form class="form" data-form="contact" novalidate>
+            <div class="form-row">
+              <label class="field"><span>Full name *</span><input name="name" required maxlength="120" autocomplete="name"></label>
+              <label class="field"><span>Email *</span><input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+            </div>
+            <label class="field"><span>Subject</span><input name="subject" maxlength="200"></label>
+            <label class="field"><span>Message *</span><textarea name="message" rows="6" required minlength="5" maxlength="4000"></textarea></label>
+            <label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+            <div class="form-status" role="status" aria-live="polite"></div>
+            <button class="btn btn--accent btn--lg" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+
+      <aside class="contact-info">
+        <div class="info-block">
+          <h2 class="info-block__title">Call us</h2>
+          <a class="info-block__big" href="tel:{{site.phoneHref}}">{{site.phone}}</a>
+          <p class="muted small">{{site.hours}}</p>
+        </div>
+        <div class="info-block">
+          <h2 class="info-block__title">Email</h2>
+          <a href="mailto:{{site.email}}">{{site.email}}</a>
+        </div>
+        <div class="info-block">
+          <h2 class="info-block__title">Office</h2>
+          <address>{{site.address}}</address>
+        </div>
+        <div class="info-block info-block--accent">
+          <h2 class="info-block__title">What happens next</h2>
+          <ol class="next-steps">
+            <li>We review your request and call you within one business day.</li>
+            <li>We book a free site visit at a time that suits you.</li>
+            <li>You receive a written, itemized estimate.</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<!-- @footer -->
+<script src="/js/contact.js"></script>
+</body>
+</html>

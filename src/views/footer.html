@@ -1,0 +1,55 @@
+<section class="cta-band">
+  <div class="container cta-band__inner">
+    <div>
+      <p class="eyebrow eyebrow--dark">Planning a project?</p>
+      <h2 class="cta-band__title">Get a detailed, no-obligation estimate.</h2>
+    </div>
+    <div class="cta-band__actions">
+      <a class="btn btn--dark" href="/quote#quote">Request a quote</a>
+      <a class="btn btn--outline-dark" href="tel:{{site.phoneHref}}">Call {{site.phone}}</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <a class="brand brand--footer" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34"><path d="M4 34 L20 6 L36 34 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M13 34 V24 H27 V34" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+        </span>
+        <span class="brand__name">{{site.name}}</span>
+      </a>
+      <p class="muted">{{site.tagline}} General contractor serving homeowners and businesses since {{site.founded}}.</p>
+      <p class="muted small">{{site.license}}</p>
+    </div>
+    <div>
+      <h3 class="footer-title">Company</h3>
+      <ul class="footer-links">
+        <li><a href="/about">About us</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-title">Services</h3>
+      <ul class="footer-links" data-footer-services>
+        <li><a href="/services">All services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-title">Visit or call</h3>
+      <address class="footer-contact">
+        {{site.address}}<br>
+        <a href="tel:{{site.phoneHref}}">{{site.phone}}</a><br>
+        <a href="mailto:{{site.email}}">{{site.email}}</a><br>
+        <span class="muted small">{{site.hours}}</span>
+      </address>
+    </div>
+  </div>
+  <div class="container site-footer__bottom">
+    <span>© {{year}} {{site.name}}. All rights reserved.</span>
+    <a href="/admin" class="muted">Staff login</a>
+  </div>
+</footer>
+<script src="/js/site.js"></script>

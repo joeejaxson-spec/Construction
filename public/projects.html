@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · {{site.name}}</title>
+  <meta name="description" content="Browse homes, commercial buildings and renovations completed by {{site.name}}.">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="projects">
+<!-- @header -->
+<main id="main">
+  <section class="page-hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="page-hero__title">Projects we’ve built</h1>
+      <p class="page-hero__lead">Homes, workplaces and renovations, each delivered by the same crew that priced it.</p>
+    </div>
+  </section>
+  <div class="hazard hazard--thin" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="chip-row" role="group" aria-label="Filter by category" data-filters></div>
+        <label class="select-inline">
+          <span>Status</span>
+          <select data-status-filter>
+            <option value="">All</option>
+            <option value="completed">Completed</option>
+            <option value="in-progress">In progress</option>
+          </select>
+        </label>
+      </div>
+      <p class="muted small" data-count aria-live="polite"></p>
+      <div class="project-grid" data-projects>
+        <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- @footer -->
+<script src="/js/projects.js"></script>
+</body>
+</html>

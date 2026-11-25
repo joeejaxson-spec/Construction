@@ -1,0 +1,31 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span>{{site.hours}}</span>
+    <span class="topbar__right">
+      <a href="mailto:{{site.email}}">{{site.email}}</a>
+      <a href="tel:{{site.phoneHref}}">{{site.phone}}</a>
+    </span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="{{site.name}} home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="40" height="40"><path d="M4 34 L20 6 L36 34 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M13 34 V24 H27 V34" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+      </span>
+      <span class="brand__name">{{site.name}}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Menu</span><span class="nav-toggle__bar"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/projects">Projects</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a class="btn btn--accent btn--sm" href="/quote#quote">Free estimate</a>
+    </nav>
+  </div>
+</header>

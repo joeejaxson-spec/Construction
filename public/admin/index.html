@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin · {{site.name}}</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <!-- Login -->
+  <main class="login" data-login hidden>
+    <form class="login__card" data-login-form novalidate>
+      <div class="login__brand">
+        <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><path d="M4 34 L20 6 L36 34 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M13 34 V24 H27 V34" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+        <div><strong>{{site.name}}</strong><span>Staff admin</span></div>
+      </div>
+      <label class="field"><span>Email</span><input name="email" type="email" autocomplete="username" required></label>
+      <label class="field"><span>Password</span><input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="alert alert--error" data-login-error hidden></p>
+      <button class="btn btn--accent btn--block" type="submit">Sign in</button>
+      <a class="login__back" href="/">← Back to website</a>
+    </form>
+  </main>
+
+  <!-- App -->
+  <div class="shell" data-app hidden>
+    <aside class="sidebar">
+      <a class="sidebar__brand" href="#dashboard">
+        <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><path d="M4 34 L20 6 L36 34 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M13 34 V24 H27 V34" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+        <span>{{site.name}}</span>
+      </a>
+      <nav class="sidebar__nav" aria-label="Admin">
+        <a href="#dashboard" data-nav="dashboard">Dashboard</a>
+        <a href="#quotes" data-nav="quotes">Quote requests <span class="pill" data-badge="quotes" hidden></span></a>
+        <a href="#messages" data-nav="messages">Messages <span class="pill" data-badge="messages" hidden></span></a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#services" data-nav="services">Services</a>
+        <a href="#account" data-nav="account">Account</a>
+      </nav>
+      <div class="sidebar__foot">
+        <span class="sidebar__user" data-user></span>
+        <a href="/" target="_blank" rel="noopener">View site ↗</a>
+        <button type="button" class="linklike" data-logout>Sign out</button>
+      </div>
+    </aside>
+    <main class="main" id="main" tabindex="-1">
+      <div data-view></div>
+    </main>
+  </div>
+
+  <dialog class="modal" data-modal>
+    <form method="dialog" class="modal__inner" data-modal-form novalidate>
+      <header class="modal__head">
+        <h2 data-modal-title></h2>
+        <button type="button" class="modal__close" data-modal-close aria-label="Close">×</button>
+      </header>
+      <div class="modal__body" data-modal-body></div>
+      <footer class="modal__foot" data-modal-foot></footer>
+    </form>
+  </dialog>
+
+  <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
